@@ -12,10 +12,6 @@ import (
 	"text/template"
 )
 
-type TemplateVars struct {
-	vars map[string]string
-}
-
 func check(e error) {
 	if e != nil {
 		panic(e)
