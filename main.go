@@ -26,8 +26,6 @@ func replaceEnvs(match []byte) []byte {
 	// do we have the env?
 	var envValue = os.Getenv(varParts[0])
 
-	fmt.Print(envValue)
-
 	if len(varParts) == 2 && envValue == "" {
 		envValue = varParts[1]
 	}
